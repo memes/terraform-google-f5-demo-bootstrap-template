@@ -13,3 +13,10 @@ terraform.tfstate*
 terraform.tfvars*
 !terraform.tfvars.example
 .terragrunt.cache
+
+# Ignore local venv and ephemeral python resources
+.venv
+__pycache__
+.pytest_cache
+.ruff_cache
+.coverage*

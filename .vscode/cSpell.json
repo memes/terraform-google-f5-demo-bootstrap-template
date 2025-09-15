@@ -19,6 +19,7 @@
         "markdownlint",
         "opencontainers",
         "pastebin",
+        "pyproject",
         "thumbsup",
         "trimpath",
         "venv",
@@ -31,6 +32,7 @@
     ],
     "ignorePaths": [
         ".devcontainer/devcontainer.json",
-        ".gitignore"
+        ".gitignore",
+        ".pre-commit-config.yaml"
     ]
 }

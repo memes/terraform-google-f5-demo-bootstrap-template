@@ -12,3 +12,7 @@ fileignoreconfig:
 - filename: README.md
   ignore_detectors:
   - filecontent
+- filename: uv.lock
+  checksum: 6b7ab81ac090fda0433383a7739ffad9c734a651bf62b39a5a778b99589039cf
+  ignore_detectors:
+  - filecontent

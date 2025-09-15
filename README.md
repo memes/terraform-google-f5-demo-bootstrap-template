@@ -1,11 +1,12 @@
-# repo-template
+# F5 Google demo bootstrap template for Google Cloud
 
-![GitHub release](https://img.shields.io/github/v/release/memes/repo-template?sort=semver)
-![Maintenance](https://img.shields.io/maintenance/yes/2024)
+![GitHub release](https://img.shields.io/github/v/release/memes/terraform-google-f5-demo-bootstrap-template?sort=semver)
+![Maintenance](https://img.shields.io/maintenance/yes/2025)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
-This repository contains common settings and actions that I tend to use in my
-demos and projects.
+This repository contains common settings and actions that are typical to my demo projects and is designed to be used
+with the [bootstrap](https://github.com/memes/terraform-google-f5-demo-bootstrap) module as a starting point for
+automated deployments.
 
 ## Setup
 
@@ -25,4 +26,6 @@ demos and projects.
    3. Modify [release-please-config.json](release-please-config.json)] as needed
    4. Reset [.release-please-manifest.json](.release-please-manifest.json) to an empty file or starting version for package(s).
 6. Remove all [CHANGELOG](CHANGELOG.md) entries.
-7. Commit changes.
+7. Modify [pyproject.toml](pyproject.toml) name and dependencies, as needed, delete [uv.lock](uv.lock) and regenerate.
+8. Modify [devcontainer](.devcontainer/devcontainer.json) name, etc., as needed, test.
+9. Commit changes.
