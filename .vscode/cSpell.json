@@ -33,6 +33,8 @@
     "ignorePaths": [
         ".devcontainer/devcontainer.json",
         ".gitignore",
-        ".pre-commit-config.yaml"
+        ".pre-commit-config.yaml",
+        ".github/workflows/infra-manager.yml",
+        ".github/workflows/infra-manager-wrapper.sh"
     ]
 }

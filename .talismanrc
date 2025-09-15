@@ -16,3 +16,5 @@ fileignoreconfig:
   checksum: 6b7ab81ac090fda0433383a7739ffad9c734a651bf62b39a5a778b99589039cf
   ignore_detectors:
   - filecontent
+- filename: .github/workflows/infra-manager.yml
+  checksum: 2e55c56434b72684037d4284da210c7a29986de6eab6649897287eeb1a8d856b
