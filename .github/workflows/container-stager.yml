@@ -19,6 +19,8 @@ permissions:
 jobs:
   container-stager:
     runs-on: ubuntu-latest
+    # TODO: enable in project bootstrapped from module
+    if: false
     env:
       GCRANE_VERSION: 0.20.6
     steps:
