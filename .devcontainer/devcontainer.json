@@ -8,6 +8,9 @@
             "helm": "latest",
             "minikube": "none"
         },
+        "ghcr.io/memes/devcontainers-features/hashicorp:1": {
+            "terraform": "1.5.7"
+        },
         "ghcr.io/memes/devcontainers-features/google-cloud-cli:1": {
             "components": "kpt kubectl kustomize gke-gcloud-auth-plugin",
             "installFromTarball": true
