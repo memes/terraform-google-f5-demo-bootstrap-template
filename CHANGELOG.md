@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.2](https://github.com/memes/terraform-google-f5-demo-bootstrap-template/compare/v0.1.1...v0.1.2) (2026-01-27)
+
+
+### Bug Fixes
+
+* Add shellcheck to devcontainer ([2135d35](https://github.com/memes/terraform-google-f5-demo-bootstrap-template/commit/2135d35c761fd99dbb4b6a1e15994f292fd088a8))
+* Switch dependabot python dependency to uv ([c9f37f6](https://github.com/memes/terraform-google-f5-demo-bootstrap-template/commit/c9f37f6fc54c5c18ed9594ce04f171241585135a))
+* Update repo config for January 27 2026 ([350405d](https://github.com/memes/terraform-google-f5-demo-bootstrap-template/commit/350405dbfd9c22228eaff7884f66eec6d4132d9c))
+* Update repo config for January 27 2026 ([a1618c7](https://github.com/memes/terraform-google-f5-demo-bootstrap-template/commit/a1618c7b1bdc62cc2168723fab52f5511fb85ad4))
+
 ## [0.1.1](https://github.com/memes/terraform-google-f5-demo-bootstrap-template/compare/v0.1.0...v0.1.1) (2025-09-15)
 
 
