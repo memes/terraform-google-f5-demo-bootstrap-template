@@ -3,7 +3,7 @@
 # spell-checker:disable
 repos:
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.37.1
+    rev: v1.38.0
     hooks:
       - id: yamllint
         files: \.(yml|yaml|talismanrc)$
@@ -13,7 +13,7 @@ repos:
           - yaml
         entry: yamllint --strict
   - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.100.0
+    rev: v1.105.0
     hooks:
       - id: terraform_fmt
       - id: terraform_docs
@@ -21,7 +21,7 @@ repos:
           - '--args=--sort-by=required --hide=providers'
       - id: terraform_tflint
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.13.0
+    rev: v0.14.14
     hooks:
       - id: ruff
         args:
@@ -29,13 +29,13 @@ repos:
           - --exit-non-zero-on-fix
       - id: ruff-format
   - repo: https://github.com/compilerla/conventional-pre-commit
-    rev: v4.2.0
+    rev: v4.3.0
     hooks:
       - id: conventional-pre-commit
         stages:
           - commit-msg
   - repo: https://github.com/DavidAnson/markdownlint-cli2
-    rev: v0.18.1
+    rev: v0.20.0
     hooks:
       - id: markdownlint-cli2
   - repo: https://github.com/shellcheck-py/shellcheck-py
@@ -57,7 +57,7 @@ repos:
           - main
       - id: trailing-whitespace
   - repo: https://github.com/RobertCraigie/pyright-python
-    rev: v1.1.405
+    rev: v1.1.408
     hooks:
       - id: pyright
   - repo: https://github.com/thoughtworks/talisman

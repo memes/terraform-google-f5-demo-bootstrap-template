@@ -1,7 +1,7 @@
 # F5 Google demo bootstrap template for Google Cloud
 
 ![GitHub release](https://img.shields.io/github/v/release/memes/terraform-google-f5-demo-bootstrap-template?sort=semver)
-![Maintenance](https://img.shields.io/maintenance/yes/2025)
+![Maintenance](https://img.shields.io/maintenance/yes/2026)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
 This repository contains common settings and actions that are typical to my demo projects and is designed to be used
