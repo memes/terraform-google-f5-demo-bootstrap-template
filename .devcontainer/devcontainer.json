@@ -2,12 +2,12 @@
     "name": "memes-terraform-google-f5-demo-bootstrap-template",
     "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
     "features": {
-        "ghcr.io/memes/devcontainers-features/direnv:1": {},
         "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
             "version": "none",
             "helm": "latest",
             "minikube": "none"
         },
+        "ghcr.io/memes/devcontainers-features/direnv:1": {},
         "ghcr.io/memes/devcontainers-features/hashicorp:1": {
             "terraform": "1.5.7"
         },
@@ -16,17 +16,17 @@
             "installFromTarball": true
         },
         "ghcr.io/memes/devcontainers-features/opentofu:1": {
-            "version": "1.10.5"
+            "version": "1.11.4"
         },
         "ghcr.io/memes/devcontainers-features/starship:1": {},
         "ghcr.io/memes/devcontainers-features/talisman:1": {
             "version": "1.37.0"
         },
         "ghcr.io/memes/devcontainers-features/terraform-docs:1": {
-            "version": "0.20.0"
+            "version": "0.21.0"
         },
         "ghcr.io/memes/devcontainers-features/tflint:1": {
-            "version": "0.58.1"
+            "version": "0.60.0"
         },
         "ghcr.io/memes/devcontainers-features/vesctl:1": {}
     },
