@@ -18,3 +18,5 @@ fileignoreconfig:
   - filecontent
 - filename: .github/workflows/infra-manager.yml
   checksum: 2e55c56434b72684037d4284da210c7a29986de6eab6649897287eeb1a8d856b
+- filename: .github/workflows/infra-manager-foundations.yml
+  checksum: a40f9f3a5c2012b8f5258145c1d23ccae40d1e09b486629305d0fa382eda4322
