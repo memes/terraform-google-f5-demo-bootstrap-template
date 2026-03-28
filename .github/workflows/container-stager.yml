@@ -2,7 +2,7 @@
 # yamllint disable rule:line-length
 # spell-checker: disable
 ---
-name: container-stager
+name: Container stager
 
 # yamllint disable-line rule:truthy
 on:
@@ -22,7 +22,7 @@ jobs:
     # TODO: enable in project bootstrapped from module
     if: false
     env:
-      GCRANE_VERSION: 0.20.6
+      GCRANE_VERSION: 0.20.7
     steps:
       - uses: actions/checkout@v6
       - name: Install gcrane
@@ -50,5 +50,6 @@ jobs:
         run: |
           gcrane auth login "$(echo "${{ vars.OCI_REGISTRY }}" | cut -d/ -f1)" --username oauth2accesstoken --password "${{ steps.gcp_auth.outputs.access_token }}"
       - name: Copy containers to private repo
-        run: |
-          gcrane cp busybox:1.37.0 ${{ vars.OCI_REGISTRY }}/busybox:1.37.0
+        env:
+          OCI_REGISTRY: ${{ vars.OCI_REGISTRY }}
+        run: ./.github/workflows/container-stager.sh
