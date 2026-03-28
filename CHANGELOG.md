@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.3](https://github.com/memes/terraform-google-f5-demo-bootstrap-template/compare/v0.1.2...v0.1.3) (2026-03-28)
+
+
+### Bug Fixes
+
+* Infra Manager GitHub action plan and output ([2e994f7](https://github.com/memes/terraform-google-f5-demo-bootstrap-template/commit/2e994f7b13b791ccd6faad9fefdf3cba564176a9))
+* Remove python from template ([f2b1877](https://github.com/memes/terraform-google-f5-demo-bootstrap-template/commit/f2b18770503503ed0a36e384009124e14795283b))
+
 ## [0.1.2](https://github.com/memes/terraform-google-f5-demo-bootstrap-template/compare/v0.1.1...v0.1.2) (2026-01-27)
 
 
