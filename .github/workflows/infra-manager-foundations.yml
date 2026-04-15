@@ -60,6 +60,7 @@ jobs:
       DEPLOYMENT_GIT_SHA: "${{ github.sha }}"
       DEPLOYMENT_GIT_REF: "${{ github.head_ref || github.ref_name }}"
       DEPLOYMENT_GIT_SOURCE_DIRECTORY: foundations
+      DEPLOYMENT_RUN_ID: "${{ github.run_id }}"
       DEPLOYMENT_INPUTS_FILE: "${{ github.sha }}.tfvars"
     steps:
       - name: Checkout source
@@ -167,11 +168,12 @@ jobs:
           script: |
             const fs = require('fs');
             const plan = fs.readFileSync('${{ github.sha }}.plan.md', 'utf8');
+            const title = '## ${{ github.workflow }} Proposed Changes';
             github.rest.issues.createComment({
               issue_number: process.env.ISSUE_NUMBER,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '## Proposed Changes\n\nInfrastructure Manager will make the following changes on merge to main, or on manual apply.\n\n' + plan,
+              body: title + '\n\nInfrastructure Manager will make the following changes on merge to main, or on manual apply.\n\n' + plan,
             })
       - name: Apply changes
         id: apply-tf
@@ -196,11 +198,12 @@ jobs:
           script: |
             const fs = require('fs');
             const output = fs.readFileSync('${{ github.sha }}.output.hcl', 'utf8');
+            const title = '## ${{ github.workflow }} output values';
             github.rest.issues.createComment({
               issue_number: process.env.ISSUE_NUMBER,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '## Output values\n\n```hcl\n' + output + '\n```\n',
+              body: title + '\n\n```hcl\n' + output + '\n```\n',
             })
       - name: Delete deployment
         id: delete-tf
