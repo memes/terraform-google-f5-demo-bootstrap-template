@@ -1,7 +1,8 @@
 {
-    "name": "memes-terraform-google-f5-demo-bootstrap-template",
+    "name": "f5-architects-terraform-google-f5-demo-bootstrap-template",
     "dockerFile": "Dockerfile",
     "features": {
+        // NOTE: Consider docker-in-docker:4 for better isolation depending on demo
         "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
             "moby": false
         },
@@ -29,7 +30,7 @@
             "extensions": [
                 "redhat.vscode-yaml",
                 "streetsidesoftware.code-spell-checker",
-                "tamasfe.event-better-toml",
+                "tamasfe.even-better-toml",
                 "opentofu.vscode-opentofu",
                 "esbenp.prettier-vscode",
                 "DavidAnson.vscode-markdownlint",
